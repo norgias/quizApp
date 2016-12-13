@@ -1,0 +1,81 @@
+h1 {
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	
+	font-family: Impact, Charcoal, sans-serif;
+	font-style: 60px
+}
+
+header {
+	background-color: white;
+	height: 80px;
+	box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.3);
+	
+	
+}
+.right {
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+
+
+body {
+	background-position: center;
+	background:url(../images/rushmore.jpg) 0px 0px;
+	background-size: cover;
+	padding: 0;
+	margin:0;
+	font-family: sans-serif;
+	
+	overflow-x: hidden;        /*stops horizontal scrolling on mobile view */
+
+}
+button {
+	margin-top: 100px;
+	width: 25%;
+	height: 60px;
+	border-radius: 8px;
+	background-color: white;
+	text-decoration: none;
+	border-style: none;
+	box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.3);
+
+}
+
+button.nextpage {
+	background-color: red;
+	box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.3);
+
+}
+h2{
+	text-align: center;
+	font-family: Impact, Charcoal, sans-serif;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	font-size: 20px;
+	margin-left: -6px;
+}
+
+section {
+	background-color: white;
+	width: 50%;
+	height: 300px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 75px;
+	height: 1560px;.
+	border-radius: 3px;
+	box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.3);
+	opacity: 0.8;
+}
+
+input {
+	vertical-align: left;
+	margin-top: -1px;
+}
