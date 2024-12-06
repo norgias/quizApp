@@ -3,7 +3,7 @@ h1 {
     margin: 0 auto;
     position: relative;
     font-family: Impact, Charcoal, sans-serif;
-    font-size: 60px; /* Corrected property name */
+    font-size: 60px; /* Maintained for desktop */
 }
 
 header {
@@ -25,12 +25,12 @@ body {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    overflow-x: hidden; /* Stops horizontal scrolling on mobile view */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 button {
-    margin-top: 100px;
-    width: 25%;
+    margin-top: 50px; /* Reduced margin for better spacing */
+    width: 30%;
     height: 60px;
     border-radius: 8px;
     background-color: white;
@@ -47,13 +47,14 @@ button.nextpage {
 h2 {
     text-align: center;
     font-family: Impact, Charcoal, sans-serif;
+    font-size: 28px; /* Larger font size for readability */
 }
 
 a {
     color: black;
     text-decoration: none;
-    font-size: 20px;
-    margin-left: -6px;
+    font-size: 22px; /* Increased for better visibility */
+    margin-left: 0; /* Adjusted for better alignment */
 }
 
 section {
@@ -61,11 +62,11 @@ section {
     width: 50%;
     text-align: center;
     margin: 0 auto;
-    margin-top: 75px;
-    height: 1560px;
+    margin-top: 50px; /* Reduced top margin */
+    height: auto; /* Allow height to adjust naturally */
     border-radius: 3px;
     box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.3);
-    opacity: 0.8;
+    opacity: 0.9; /* Slightly increased opacity for better contrast */
 }
 
 input {
@@ -73,33 +74,65 @@ input {
     margin-top: -1px;
 }
 
-/* Responsive Styles for Mobile Devices */
+/* Enhanced Responsive Styles for Mobile Devices */
 @media (max-width: 768px) {
     h1 {
-        font-size: 40px; /* Reduce font size for smaller screens */
+        font-size: 48px; /* Slightly reduced, but still prominent */
+        margin-top: 10px; /* Added space for better positioning */
     }
 
     body {
-        background-size: contain; /* Ensure background adjusts for smaller screens */
+        background-size: cover; /* Ensure background remains visually appealing */
     }
 
     button {
-        width: 80%; /* Increase button width for mobile usability */
+        width: 90%; /* Wider buttons for easier tapping */
         height: 50px; /* Adjust height for better appearance */
+        margin-top: 20px; /* Reduced space above */
     }
 
     section {
-        width: 90%; /* Reduce width to fit smaller screens */
-        height: auto; /* Allow section height to adjust naturally */
-        margin-top: 20px; /* Reduce top margin */
+        width: 95%; /* Nearly full width for maximum visibility */
+        margin-top: 20px; /* Reduced top margin */
+        padding: 10px; /* Added padding for cleaner look */
     }
 
     header {
-        height: 60px; /* Adjust header height for smaller screens */
+        height: 60px; /* Adjusted header height for compact look */
     }
 
     a {
-        font-size: 16px; /* Adjust font size for links */
+        font-size: 18px; /* Increased link font size */
+        margin-left: 0; /* Removed unnecessary negative margin */
+    }
+
+    h2 {
+        font-size: 24px; /* Reduced slightly for balance */
+    }
+}
+
+/* Further Optimizations for Very Small Screens (Max 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 36px; /* Reduced further for smaller screens */
+    }
+
+    button {
+        width: 95%; /* Almost full width for better usability */
+        height: 45px; /* Adjusted for proportionate size */
+    }
+
+    h2 {
+        font-size: 22px; /* Slightly reduced for better fit */
+    }
+
+    section {
+        width: 100%; /* Full width on very small devices */
+        padding: 15px; /* Added padding for neat layout */
+    }
+
+    a {
+        font-size: 16px; /* Adjusted for compact display */
     }
 }
 	
