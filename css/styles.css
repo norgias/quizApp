@@ -3,13 +3,17 @@ h1 {
     margin: 0 auto;
     position: relative;
     font-family: Impact, Charcoal, sans-serif;
-    font-size: 60px; /* Maintained for desktop */
+    font-size: 60px; /* Kept for desktop */
+    margin-top: 20px; /* Slight margin for spacing */
 }
 
 header {
     background-color: white;
     height: 80px;
     box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .right {
@@ -29,7 +33,7 @@ body {
 }
 
 button {
-    margin-top: 50px; /* Reduced margin for better spacing */
+    margin-top: 50px; /* Adjusted for better spacing */
     width: 30%;
     height: 60px;
     border-radius: 8px;
@@ -37,6 +41,7 @@ button {
     text-decoration: none;
     border-style: none;
     box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.3);
+    font-size: 18px; /* Increased font size for readability */
 }
 
 button.nextpage {
@@ -47,26 +52,26 @@ button.nextpage {
 h2 {
     text-align: center;
     font-family: Impact, Charcoal, sans-serif;
-    font-size: 28px; /* Larger font size for readability */
+    font-size: 28px; /* Increased for better visibility */
 }
 
 a {
     color: black;
     text-decoration: none;
-    font-size: 22px; /* Increased for better visibility */
-    margin-left: 0; /* Adjusted for better alignment */
+    font-size: 22px; /* Adjusted for readability */
 }
 
 section {
     background-color: white;
-    width: 50%;
+    width: 50%; /* Retain for desktop */
     text-align: center;
     margin: 0 auto;
-    margin-top: 50px; /* Reduced top margin */
-    height: auto; /* Allow height to adjust naturally */
+    margin-top: 75px;
+    height: auto; /* Adjust height dynamically */
     border-radius: 3px;
     box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.3);
-    opacity: 0.9; /* Slightly increased opacity for better contrast */
+    padding: 20px; /* Added padding for cleaner layout */
+    opacity: 0.9; /* Slightly increased for better contrast */
 }
 
 input {
@@ -74,65 +79,60 @@ input {
     margin-top: -1px;
 }
 
-/* Enhanced Responsive Styles for Mobile Devices */
+/* Responsive Design for Mobile */
 @media (max-width: 768px) {
     h1 {
-        font-size: 48px; /* Slightly reduced, but still prominent */
-        margin-top: 10px; /* Added space for better positioning */
+        font-size: 48px; /* Slightly smaller for mobile */
+        margin-top: 10px; /* Adjusted spacing */
     }
 
     body {
-        background-size: cover; /* Ensure background remains visually appealing */
+        background-size: cover;
     }
 
     button {
-        width: 90%; /* Wider buttons for easier tapping */
-        height: 50px; /* Adjust height for better appearance */
-        margin-top: 20px; /* Reduced space above */
+        width: 90%; /* Wider buttons for mobile */
+        height: 50px; /* Adjusted for mobile proportions */
+        margin-top: 20px; /* Reduced spacing above */
     }
 
     section {
-        width: 95%; /* Nearly full width for maximum visibility */
-        margin-top: 20px; /* Reduced top margin */
-        padding: 10px; /* Added padding for cleaner look */
-    }
-
-    header {
-        height: 60px; /* Adjusted header height for compact look */
-    }
-
-    a {
-        font-size: 18px; /* Increased link font size */
-        margin-left: 0; /* Removed unnecessary negative margin */
+        width: 90%; /* Make section occupy most of the screen */
+        margin-top: 20px; /* Reduced margin */
+        padding: 15px; /* Adjusted padding for smaller screens */
     }
 
     h2 {
-        font-size: 24px; /* Reduced slightly for balance */
+        font-size: 24px; /* Adjusted for mobile readability */
+    }
+
+    a {
+        font-size: 18px; /* Better fit for mobile */
     }
 }
 
-/* Further Optimizations for Very Small Screens (Max 480px) */
+/* Enhanced Adjustments for Very Small Screens (Max 480px) */
 @media (max-width: 480px) {
     h1 {
-        font-size: 36px; /* Reduced further for smaller screens */
+        font-size: 36px; /* Smaller for very small screens */
+        margin-top: 5px; /* Less spacing */
     }
 
     button {
-        width: 95%; /* Almost full width for better usability */
-        height: 45px; /* Adjusted for proportionate size */
-    }
-
-    h2 {
-        font-size: 22px; /* Slightly reduced for better fit */
+        width: 95%; /* Full-width buttons for small screens */
+        height: 45px; /* Proportional adjustment */
     }
 
     section {
-        width: 100%; /* Full width on very small devices */
-        padding: 15px; /* Added padding for neat layout */
+        width: 95%; /* Occupy nearly full width */
+        padding: 10px; /* Reduced padding */
+    }
+
+    h2 {
+        font-size: 20px; /* Adjusted for smaller screens */
     }
 
     a {
-        font-size: 16px; /* Adjusted for compact display */
+        font-size: 16px; /* Smaller font for better fit */
     }
 }
-	
