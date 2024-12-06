@@ -1,81 +1,105 @@
 h1 {
-	text-align: center;
-	margin: 0 auto;
-	position: relative;
-	
-	font-family: Impact, Charcoal, sans-serif;
-	font-style: 60px
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 60px; /* Corrected property name */
 }
 
 header {
-	background-color: white;
-	height: 80px;
-	box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.3);
-	
-	
+    background-color: white;
+    height: 80px;
+    box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.3);
 }
+
 .right {
-	display: block;
-	margin: 0 auto;
-	margin-top: 50px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
 }
-
-
 
 body {
-	background-position: center;
-	background:url(../images/rushmore.jpg) 0px 0px;
-	background-size: cover;
-	padding: 0;
-	margin:0;
-	font-family: sans-serif;
-	
-	overflow-x: hidden;        /*stops horizontal scrolling on mobile view */
-
+    background-position: center;
+    background: url(../images/rushmore.jpg) 0px 0px;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    overflow-x: hidden; /* Stops horizontal scrolling on mobile view */
 }
-button {
-	margin-top: 100px;
-	width: 25%;
-	height: 60px;
-	border-radius: 8px;
-	background-color: white;
-	text-decoration: none;
-	border-style: none;
-	box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.3);
 
+button {
+    margin-top: 100px;
+    width: 25%;
+    height: 60px;
+    border-radius: 8px;
+    background-color: white;
+    text-decoration: none;
+    border-style: none;
+    box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.3);
 }
 
 button.nextpage {
-	background-color: red;
-	box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.3);
-
+    background-color: red;
+    box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.3);
 }
-h2{
-	text-align: center;
-	font-family: Impact, Charcoal, sans-serif;
+
+h2 {
+    text-align: center;
+    font-family: Impact, Charcoal, sans-serif;
 }
 
 a {
-	color: black;
-	text-decoration: none;
-	font-size: 20px;
-	margin-left: -6px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: -6px;
 }
 
 section {
-	background-color: white;
-	width: 50%;
-	height: 300px;
-	text-align: center;
-	margin: 0 auto;
-	margin-top: 75px;
-	height: 1560px;.
-	border-radius: 3px;
-	box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.3);
-	opacity: 0.8;
+    background-color: white;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 75px;
+    height: 1560px;
+    border-radius: 3px;
+    box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.3);
+    opacity: 0.8;
 }
 
 input {
-	vertical-align: left;
-	margin-top: -1px;
+    vertical-align: left;
+    margin-top: -1px;
 }
+
+/* Responsive Styles for Mobile Devices */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px; /* Reduce font size for smaller screens */
+    }
+
+    body {
+        background-size: contain; /* Ensure background adjusts for smaller screens */
+    }
+
+    button {
+        width: 80%; /* Increase button width for mobile usability */
+        height: 50px; /* Adjust height for better appearance */
+    }
+
+    section {
+        width: 90%; /* Reduce width to fit smaller screens */
+        height: auto; /* Allow section height to adjust naturally */
+        margin-top: 20px; /* Reduce top margin */
+    }
+
+    header {
+        height: 60px; /* Adjust header height for smaller screens */
+    }
+
+    a {
+        font-size: 16px; /* Adjust font size for links */
+    }
+}
+	
